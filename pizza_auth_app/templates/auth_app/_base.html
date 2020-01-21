@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+<p>{{ user }}</p>
+    {% if user.is_anonymous %}
+        <p>
+        <a href="{% url 'auth_app:register' %}">
+            Register
+        </a>
+        </p>
+    {% endif %}
+{% block content %}
+{% endblock content %}
+
+</body>
+</html>

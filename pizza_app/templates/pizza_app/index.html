@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="{% url 'pizza:create' %}">Create new</a>
+
+<ul>
+{% for pizza in pizzas %}
+    <li><a href="{% url 'pizza:view' pizza.id %}">{{ pizza }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
