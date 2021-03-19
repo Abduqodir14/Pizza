@@ -1,7 +1,7 @@
 address==0.1.1
 Django==2.2.4
 django-debug-toolbar==2.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 login==0.0.6
 pytz==2019.2
 sqlparse==0.3.0
